@@ -2,7 +2,7 @@
 
 English | [中文](README.zh.md)
 
-[![skills.sh](https://skills.sh/b/Etavioxy/my-agents-md)](https://skills.sh/Etavioxy/my-agents-md)
+[![skills.sh](https://img.shields.io/badge/skills.sh-my--agents--md-8A2BE2)](https://www.skills.sh/skills/etavioxy/my-agents-md)
 
 My personal AGENTS.md, including skills for documentation conventions.
 
