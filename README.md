@@ -8,7 +8,7 @@ My personal AGENTS.md, including skills for documentation conventions.
 
 ## Features
 
-- ...（to be written once AGENTS is added）
+- [AGENTS.md](AGENTS.md) — my global Claude Code instructions: working defaults, communication principles, code of conduct, and forbidden commands
 - Introduce [skill-authoring](skills/skill-authoring/SKILL.md) to distinguish Skill vs Notes via SKILL.md links
 - Progressive disclosure of sub-documents: organize related docs via links, keep text minimal, keep core rules in SKILL.md
 - [conversation-flow](skills/conversation-flow/SKILL.md) — stage gates, feedback loops, and pre-task stack for conversation flow

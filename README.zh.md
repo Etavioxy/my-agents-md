@@ -6,7 +6,7 @@
 
 ## 特性
 
-- ...（等AGENTS加入再写）
+- [AGENTS.md](AGENTS.md) — 我的全局 Claude Code 指令：工作默认值、沟通原则、行为准则、禁止命令
 - 引入 [skill-authoring](skills/skill-authoring/SKILL.md) 根据 SKILL.md 链接，区分 Skill 与 Notes
 - 子文档渐进披露：通过链接组织关联文档，减少文本量，必经规则保留在 SKILL.md 内
 - [conversation-flow](skills/conversation-flow/SKILL.md) — 对话阶段门禁、反馈循环、前置任务栈
