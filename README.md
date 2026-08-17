@@ -8,10 +8,18 @@ My personal AGENTS.md, including skills for documentation conventions.
 
 ## Features
 
-- [AGENTS.md](AGENTS.md) — my global Claude Code instructions: working defaults, communication principles, code of conduct, and forbidden commands
-- Introduce [skill-authoring](skills/skill-authoring/SKILL.md) to distinguish Skill vs Notes via SKILL.md links
-- Progressive disclosure of sub-documents: organize related docs via links, keep text minimal, keep core rules in SKILL.md
-- [conversation-flow](skills/conversation-flow/SKILL.md) — stage gates, feedback loops, and pre-task stack for conversation flow
+AGENTS.md conventions (defaults):
+
+- Skills as knowledge base: grep the full set of .md files in the skills directory for any unfamiliar concept.
+- Numeric constraints: obey literally — list exactly that many, write exactly that many words, no more no less.
+- Documentation conventions: organized by a reference hierarchy — concepts/glossaries are referenced, never redefined; drafts are process artifacts, referenced by nothing; one canonical source per fact; written for durability.
+- Forbid irreversible actions: e.g. `git reset --hard`, `push -f`, killing processes — unless the user explicitly confirms.
+
+Skill conventions (emphasized after mistakes):
+
+- Follow skill conventions: distinguish Skill vs Notes by SKILL.md link reachability; sub-documents disclose progressively.
+- Naming inspiration: for naming and path decisions, always propose multiple options with a recommendation, and require user confirmation.
+- Stage gates: guide the agent to divide the task into stages itself — one stage at a time, each with independent permissions, plus explicit pre-task prompts.
 
 ## Skills
 

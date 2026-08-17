@@ -1,4 +1,4 @@
-# Global Claude Code instructions
+# Global agent instructions
 
 - Do not proactively enter plan mode.
 - Default to normal execution flow unless I explicitly ask for plan mode or clearly ask for planning first.
