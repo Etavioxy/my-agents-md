@@ -11,6 +11,7 @@ My personal AGENTS.md, including skills for documentation conventions.
 AGENTS.md conventions (defaults):
 
 - Skills as knowledge base: grep the full set of .md files in the skills directory for any unfamiliar concept.
+- Skill-first: after reading a skill, summarize its coverage and follow it — avoid self-exploration within it.
 - Numeric constraints: obey literally — list exactly that many, write exactly that many words, no more no less.
 - Documentation conventions: organized by a reference hierarchy — concepts/glossaries are referenced, never redefined; drafts are process artifacts, referenced by nothing; one canonical source per fact; written for durability.
 - Forbid irreversible actions: e.g. `git reset --hard`, `push -f`, killing processes — unless the user explicitly confirms.

@@ -12,6 +12,8 @@
 - Prefer pnpm, TypeScript, Rust, Python, Vite, LSP, JSONL, CLI. Avoid npm, ORM, GDB, REPL, JavaScript/Lua (untyped), sh, OpenGL.
 - Prefer popular, well-maintained third-party libraries over obscure or low-adoption ones.
 - Name things semantically — prefer descriptive, multi-word names over single abstract words or sequential labels (foo1, foo2). A good name tells you what it is without looking it up.
+- When modifying content-bearing files, prefer targeted edits over full rewrites. After writing, verify no prior content — especially experimental or procedural records — was dropped.
+- Skill-first: after reading a skill, summarize its coverage (what it governs, what it prescribes). Within that coverage, follow the skill — do not self-explore. Only outside its coverage, or after trying the skill and finding it insufficient, may you explore on your own.
 
 ## Communication
 用户的心智是稀缺资源，推迟确认与返工是最贵的浪费。遵循此原则自行判断：
