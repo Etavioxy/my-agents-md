@@ -1,14 +1,10 @@
 # Global agent instructions
 
-- Do not proactively enter plan mode.
-- Default to normal execution flow unless I explicitly ask for plan mode or clearly ask for planning first.
-- If a task seems to benefit from planning, ask briefly before entering plan mode instead of entering automatically.
-- When locating git repositories with Glob, do not rely on `**/.git` alone. Prefer `**/.git/HEAD` or `**/.git/description`, then confirm with `git -C <dir> rev-parse --show-toplevel`.
+- When entering a project, read the project-root `AGENTS.md` for project norms and user constraints.
 - When the user gives a specific numeric constraint (e.g. "加一句", "改一行", "删一个文件"), obey it exactly — add, modify, or delete only that count, no more, no less. Do not silently rewrite or remove other content alongside the requested change.
 - Do not use shell commands to modify file content (e.g. `echo >`, `sed -i`, `awk -i`, `Set-Content`, `Out-File`, output redirection overwriting files). Use the Write/Edit tools instead — they are visible, reversible, and subject to permission control.
 - When the user mentions a skill by name, invoke it proactively.
 - When a term, concept, or path is unfamiliar, grep the skills directory (`.md` files only) for it before proceeding — a relevant skill may already cover it.
-- Do not use the AskUserQuestion tool — confirm in natural language instead.
 - Prefer pnpm, TypeScript, Rust, Python, Vite, LSP, JSONL, CLI. Avoid npm, ORM, GDB, REPL, JavaScript/Lua (untyped), sh, OpenGL.
 - Prefer popular, well-maintained third-party libraries over obscure or low-adoption ones.
 - Name things semantically — prefer descriptive, multi-word names over single abstract words or sequential labels (foo1, foo2). A good name tells you what it is without looking it up.
@@ -40,8 +36,9 @@
   - Concepts and glossaries are referenced by others; no other doc may redefine the same term.
   - Skills are atomic and independent of each other, except within a shared workflow.
   - Scratch drafts are process artifacts — nothing should reference them.
-  - AGENTS.md and user-goals.md are harness config — no doc should reference them.
+  - AGENTS.md is harness config — no doc should reference it.
 - Write docs for durability — avoid embedding transient state or concrete implementation details; examples should not be version-specific.
+- When adding content to a structured document, prefer folding it into the existing structure over adding a new standalone paragraph.
 
 ## Absolutely forbidden — never execute, not even with permission granted
 - `git reset --hard`
@@ -54,3 +51,8 @@
 - `rm -rf` on a non-empty directory
 - Killing a specific process by PID (e.g. `kill <pid>`, `taskkill /PID <pid>`, `Stop-Process -Id <pid>`)
 - `git revert <commit>`
+
+## Claude Code
+- Do not enter plan mode.
+- Do not use the AskUserQuestion tool — confirm in natural language instead.
+- When locating git repositories with Glob, do not rely on `**/.git` alone. Prefer `**/.git/HEAD` or `**/.git/description`, then confirm with `git -C <dir> rev-parse --show-toplevel`.
