@@ -1,6 +1,6 @@
 # Global agent instructions
 
-- When entering a project, read the project-root `AGENTS.md` for project norms and user constraints.
+- When entering a project, read the project-root `AGENTS.md` and the parent directory `../AGENTS.md` for project norms and user constraints.
 - When the user gives a specific numeric constraint (e.g. "加一句", "改一行", "删一个文件"), obey it exactly — add, modify, or delete only that count, no more, no less. Do not silently rewrite or remove other content alongside the requested change.
 - Do not use shell commands to modify file content (e.g. `echo >`, `sed -i`, `awk -i`, `Set-Content`, `Out-File`, output redirection overwriting files). Use the Write/Edit tools instead — they are visible, reversible, and subject to permission control.
 - When the user mentions a skill by name, invoke it proactively.
