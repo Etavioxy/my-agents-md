@@ -9,8 +9,8 @@ description: Skill 编写规范。Skill 与 Notes 的区别、命名方式。触
 
 | | Skill | Notes |
 |------|-------|-------|
-| **是什么** | 给其他调用 agent 使用的信息 | 编写过程中的记录，比如 user-goals |
-| **范围** | SKILL.md + 通过其链接可达的全部文档，更精简 | 目录内不被链接的其余文件，更细节 |
+| **是什么** | 给其他调用 agent 使用的信息 | 编写过程中的记录，比如草稿、规范、AGENTS.md |
+| **范围** | SKILL.md + 通过其链接可达的全部文档（含间接可达），更精简 | 目录内不被链接的其余文件，更细节 |
 | **是否被编辑 skill 的 agent 使用** | 是 | 是 |
 | **是否被调用 skill 的 agent 使用** | 是 | 否 |
 
@@ -22,7 +22,7 @@ description: Skill 编写规范。Skill 与 Notes 的区别、命名方式。触
   ├── drafts/       ← 可选，未被链接 → Notes
   │   └── YYYY-MM-DD-<topic>.md  ← 按需多个
   ├── spec.md       ← 可选，文档规范
-  └── user-goals.md ← 可选，按需启用
+  └── AGENTS.md     ← 可选，编写约束
 ```
 
 子文档不是必须的。内容少时仅 SKILL.md 即可：
@@ -30,16 +30,16 @@ description: Skill 编写规范。Skill 与 Notes 的区别、命名方式。触
 ```
 <skill-name>/            ← git 仓库
   ├── SKILL.md        ← 唯一文件
-  └── (user-goals.md) ← 可选，只有用户要求才启用
+  └── (AGENTS.md)     ← 可选，只有用户要求才启用
 ```
 
 ### Skill
 
-Skill 是给调用 agent 使用的信息。以 SKILL.md 为入口，通过链接组织关联文档，达到渐进披露的效果。不应有多余信息进入。并且应该减少文本量。
+Skill 是给调用 agent 使用的信息。以 SKILL.md 为入口，组织关联文档使用相对链接格式 **`[<doc-name>](./<doc-path>)`**，达到渐进披露的效果。
 
 Skill 内的场景和结论都经过验证，不经用户确认的内容不得进入。
 
-引用其他 skill 用 wiki 链接格式 **`[[skill-name]]`**，并附上说明 **`请 invoke [[skill-name]]`**
+引用其他 skill 用 wiki 链接格式 **`[[skill-name]]`**，并附上说明 **`请 invoke [[skill-name]]`**。
 
 ### Notes
 
@@ -47,8 +47,6 @@ Notes 是制造过程。Skill 目录内不被 SKILL.md 链接的文件——约�
 
 - `drafts/`：每次任务的叙事性主记录，记录 grilling 的全过程（尤其保留用户原话、犯错原因）、sandbox 踩坑过程、阶段总结和原理归纳，仅 append 修改，无需提供给调用 agent
 - `spec.md`：记录文档规范，skill 内容的写法约定，仅辅助编辑 skill 内容，无需提供给调用 agent
-
-如果需要了解 user-goals 请 invoke [[goals-gate-approver]]
 
 ## SKILL 命名
 
