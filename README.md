@@ -26,6 +26,7 @@ Skill conventions (emphasized after mistakes):
 
 - [skill-authoring](skills/skill-authoring/SKILL.md) — Skill vs Notes distinction, SKILL.md as entry with progressive disclosure
 - [conversation-flow](skills/conversation-flow/SKILL.md) — dialogue stage gates, feedback loop, pre-task stack push
+- [docs-review](skills/docs-review/SKILL.md) — audit docs for slop: enumeration in tree annotations, leftover status markers, not-yet-built placeholders, invented numbers
 
 ## License
 

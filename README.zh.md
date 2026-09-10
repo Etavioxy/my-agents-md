@@ -24,6 +24,7 @@ AGENTS.md 特性：（默认前提）
 
 - [skill-authoring](skills/skill-authoring/SKILL.md) — Skill 与 Notes 的区分，SKILL.md 为入口渐进披露
 - [conversation-flow](skills/conversation-flow/SKILL.md) — 对话流程：阶段门禁、反馈循环、前置任务 stack push
+- [docs-review](skills/docs-review/SKILL.md) — 文档 slop 审查：目录注释穷举、状态标注残留、「将要做的」占位、私拍数字量
 
 ## License
 
