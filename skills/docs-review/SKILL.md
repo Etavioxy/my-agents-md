@@ -5,6 +5,8 @@ description: 文档 slop 审查——写完 docs/spec 后循环自查：目录�
 
 # docs-review — 文档 slop 审查
 
+本清单由**当前 agent 逐条自查**，**不启动 subagent**、不外派审查。
+
 ## 审查清单
 
 ### 1. 目录注释穷举
