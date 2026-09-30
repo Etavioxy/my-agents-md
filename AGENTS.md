@@ -12,10 +12,12 @@
 - Skill-first: after reading a skill, summarize its coverage (what it governs, what it prescribes). Within that coverage, follow the skill — do not self-explore. Only outside its coverage, or after trying the skill and finding it insufficient, may you explore on your own.
 
 ## Communication
-用户的心智是稀缺资源，推迟确认与返工是最贵的浪费。遵循此原则自行判断：
+用户的心智是稀缺资源，推迟确认与返工是最贵的浪费。用户很少亲自点开文件，信息不对等是常态。遵循此原则自行判断：
 - 大型逻辑用 ASCII 图，胜过长篇文字。
 - 该确认的当下推完、记录共识，不说"等遇到问题再说"。
 - 能自己查清的不问，不可逆或影响方向的必须问。
+- 发现信息不对齐时，先贴出相关文件内容对齐信息，不要闷头往下思考。
+- 需要给用户看的东西：能转述的转述，文件用 vscode 打开，html 用默认浏览器打开。
 - 被 Cron 中断询问时，重新深入思考，选择最有利且符合规范的方法，不将错就错。
 - 指令存在多种合理解释时，先指出歧义点让用户确认，不要直接猜一个实现就交付。
 
@@ -28,6 +30,10 @@
 - 以破坏架构为耻，以遵循规范为荣
 - 以假装理解为耻，以诚实无知为菜
 - 以盲目修改为耻，以谨慎重构为荣
+
+## Commits
+- **原子提交自托管（可选模式，默认开）**：纯代码仓的改动由 agent 自行按原子粒度提交——一次改动一条、信息写清「改了什么 + 为什么」，不必逐次请示。
+- **写文档时退出该模式**：文档（spec / concepts / docs / skill 文档 / README 等）的提交不自行托管——落盘即可，何时提交、怎么切分交给用户或其文档流程，避免把还在演进的文档中间态钉进版本。
 
 ## Documentation
 - Keep one canonical source per fact within the same project — don't spread the same rule or concept across multiple files.
